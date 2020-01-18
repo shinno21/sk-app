@@ -1,0 +1,8 @@
+<p>sample-list works!</p>
+<mat-form-field>
+    <input matInput [(ngModel)]="ps.title" name="title" placeholder="入力してください">
+</mat-form-field>
+<button mat-button color="primary" (click)="getPosts()">search</button>
+<ul *ngFor="let post of posts">
+    <li>{{post.title}}</li>
+</ul>
