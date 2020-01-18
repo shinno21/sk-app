@@ -1,4 +1,12 @@
-# SkApp
+# SkApp (Angular Starter Kit)
+
+## Angular の 初心者向けスターターキット
+
+* サンプルコードとして利用し、動作可能なアプリケーションをすぐに開発可能
+* API は以下のコードをサンプルとして利用出来る
+
+https://github.com/shinno21/drf_sample
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
 
