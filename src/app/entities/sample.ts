@@ -1,7 +1,7 @@
 export class Post {
     title: string
     content: string
-    cre_dt: Date
+    cre_date: Date
     status: string
     statusName: string
     username: string

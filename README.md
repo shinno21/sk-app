@@ -8,6 +8,22 @@
 https://github.com/shinno21/drf_sample
 
 
+## コンポーネントの追加
+
+```
+# components/sample に sample-reg を追加
+# コンポーネント名はケバブケースで定義
+# src/app/components/sample/sample-reg 以下にコンポーネントの一式が出来上がる
+ng g component components/sample/sample-reg
+```
+
+## 画面の追加
+
+* コンポーネントの追加
+* URL の追加
+* コンポーネントの編集
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
 
 ## Development server

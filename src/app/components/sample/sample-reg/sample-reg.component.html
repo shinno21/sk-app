@@ -1,0 +1,31 @@
+<p>sample-reg works!</p>
+<form class="example-form">
+    <button mat-button color="primary" (click)="pushRegButton()">登録</button>
+    <br>
+    <mat-form-field>
+        <input matInput placeholder="タイトル" [(ngModel)]="post.title" name="title" required>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <textarea matInput placeholder="内容" [(ngModel)]="post.content" name="content" required></textarea>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <mat-label>状況</mat-label>
+        <select matNativeControl required [(ngModel)]="post.status" name="status" required>
+            <option value="00">一次保存</option>
+            <option value="10">公開</option>
+        </select>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <input matInput placeholder="作成日時" [matDatepicker]=" picker" [(ngModel)]="post.cre_date" name="cre_dt" required>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <input matInput placeholder="ユーザ名" [(ngModel)]="post.username" name="username" required>
+    </mat-form-field>
+    <br>
+</form>
