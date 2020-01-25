@@ -17,13 +17,19 @@ import { SampleListComponent } from './components/sample/sample-list/sample-list
 import { SampleService } from 'src/app/services/sample/sample.service';
 
 // Angular Material
+import { MatNativeDateModule } from '@angular/material';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { SampleRegComponent } from './components/sample/sample-reg/sample-reg.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatSelectModule } from '@angular/material/select';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    SampleListComponent
+    SampleListComponent,
+    SampleRegComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +41,9 @@ import { MatInputModule } from '@angular/material/input';
     // Angular Material
     MatButtonModule,
     MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSelectModule,
 
     HttpClientModule,
 
