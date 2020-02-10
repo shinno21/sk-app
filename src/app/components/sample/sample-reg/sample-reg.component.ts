@@ -9,6 +9,7 @@ import { Post } from 'src/app/entities/sample';
 })
 export class SampleRegComponent implements OnInit {
   post: Post = new Post();
+  errmsg_cre_date: string = "";
   constructor(private sampleService: SampleService, ) { }
 
   ngOnInit() {
@@ -24,6 +25,8 @@ export class SampleRegComponent implements OnInit {
         console.log("登録しました！");
       },
       err => {
+        this.errmsg_cre_date = err.error.cre_date;
+        console.log(err.error.cre_date)
         console.log("NG: 登録失敗！");
       }
     );
